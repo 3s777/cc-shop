@@ -18,6 +18,8 @@ Route::get('/', function () {
 //        ->channel('telegram')
 //        ->info('asdf');
 
+    $pr = \App\Models\Product::where('slug', 'asdf')->first();
+dd($pr);
     return view('welcome');
 });
 
