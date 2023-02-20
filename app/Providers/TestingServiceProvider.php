@@ -6,6 +6,7 @@ use Faker\Factory;
 use Faker\Generator;
 use Faker\Provider\Base;
 use Illuminate\Support\ServiceProvider;
+use Support\Testing\FakerImageProvider;
 
 class TestingServiceProvider extends ServiceProvider
 {
