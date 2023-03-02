@@ -17,10 +17,11 @@ class ProductFactory extends Factory
             'title' => ucfirst($this->faker->words(2, true)),
             'brand_id' => Brand::query()->inRandomOrder()->value('id'),
 //            'thumbnail' => $this->faker->loremflickr('images/products'),
-            'thumbnail' => $this->faker->fixturesImage('products', 'images/products'),
+            'thumbnail' => $this->faker->fixturesImage('products', 'products'),
             'price' => $this->faker->numberBetween(1000, 100000),
             'on_home_page' => $this->faker->boolean(),
-            'sorting' => $this->faker->numberBetween(1, 999)
+            'sorting' => $this->faker->numberBetween(1, 999),
+            'text' => $this->faker->realText()
         ];
     }
 }
