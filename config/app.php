@@ -193,11 +193,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\MoonShineServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
         App\Providers\TestingServiceProvider::class,
         App\Providers\DomainServiceProvider::class,
         App\Providers\CatalogServiceProvider::class,
+        App\Providers\MoonShineServiceProvider::class,
     ],
 
     /*

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $product->title)
+@section('title', $seo_title ?? $product->title)
 
 @section('content')
     <main class="py-16 lg:py-20">
